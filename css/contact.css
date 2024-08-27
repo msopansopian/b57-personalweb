@@ -1,0 +1,58 @@
+body {
+  background: rgb(9, 121, 105);
+  background: linear-gradient(90deg, rgba(9, 121, 105, 0.9809173669467787) 0%, rgba(0, 212, 255, 0.6307773109243697) 100%);
+}
+h1 {
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+}
+
+.container {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  min-height: 70vh; 
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 80%;
+}
+
+.label-contact,
+.input-contact {
+  margin-bottom: 10px;
+}
+
+.label-contact {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.input-contact {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(252, 250, 250);
+  border-color: rgb(161, 161, 161);
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+textarea.input-contact {
+  resize: none;
+  height: 80px;
+}
+
+.submit-contact {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  align-self: flex-end;
+}

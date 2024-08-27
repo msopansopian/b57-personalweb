@@ -1,16 +1,21 @@
 body {
   margin: 0;
   padding: 0;
-  /* background-color: rgb(253, 247, 239); */
+  
   background: rgb(9, 121, 105);
   background: linear-gradient(90deg, rgba(9, 121, 105, 0.9809173669467787) 0%, rgba(0, 212, 255, 0.6307773109243697) 100%);
 }
+
+
+
+
 /* styling card */
 .card {
+  display: flex;
   background-color: rgb(213, 230, 230);
   margin: 50px auto;
   height: 80%;
-  width: 30%;
+  width: 40%;
   border: 2px solid black;
   padding: 5px;
   border-radius: 10px;
@@ -19,27 +24,34 @@ body {
 
 .biodata {
   margin: 5%;
+  width: 50%;
+}
+
+.biodata h3{
+  margin-bottom: 5px;
 }
 
 button {
   border-radius: 5px;
   background-color: black;
   color: aliceblue;
-  margin-bottom: 5px;
+  
+  padding: 4px;
+  margin: 20px 0px;
 }
 
 /* styling icon */
 .icon {
   font-size: large;
   display: flex;
-  justify-content: center;
+  
 }
-
+/*  */
 /* styling profil */
 .profil {
   border-radius: 10px;
   background-color: rgb(226, 226, 226);
-  margin: 0 auto 5%;
+  margin: 5% auto 5%;  /* atas 0,auto sisi,bawah 5% */
   width: fit-content;
 }
 
@@ -50,7 +62,7 @@ i {
 
 img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: contain;
   border-radius: 10px;
 }
