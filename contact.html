@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
     <title>contact</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
       <ul>
         <li>
           <a href="index.html">
-            <img src="img/dumbways.png" alt="logo dumbways" />
+            <img src="assets/img/dumbways.png" alt="logo dumbways" />
           </a>
         </li>
         <li class="nav-link">
@@ -32,24 +32,26 @@
     <!-- CONTACT -->
     <h1>GET IN TOUCH</h1>
     <div class="container">
-      <form class="form-contact">
-        <label for="label-contact" class="label-contact">Name</label>
-        <input type="text" class="input-contact" />
-        <label for="label-contact" class="label-contact">Email</label>
-        <input type="text" class="input-contact" />
-        <label for="label-contact" class="label-contact">Phone Number</label>
-        <input type="text" class="input-contact" />
-        <label for="label-contact" class="label-contact">Subject</label>
-        <select class="input-contact">
+      <form class="form-contact" onsubmit="sendEmail(event)">
+        <label class="label-contact" class="label-contact" >Name</label>
+        <input type="text" class="input-contact" id="inputName" />
+        <label class="label-contact" class="label-contact" >Email</label>
+        <input type="text" class="input-contact" id="inputEmail" />
+        <label class="label-contact" class="label-contact">Phone Number</label>
+        <input type="text" class="input-contact" id="inputPhoneNumber" />
+        <label class="label-contact" class="label-contact">Subject</label>
+        <select class="input-contact" id="inputSubject">
           <option></option>
           <option>Front End Developer</option>
           <option>Back End Developer</option>
           <option>Fullstack Developer</option>
         </select>
-        <label for="label-contact" class="label-contact">Your Massage</label>
-        <textarea class="input-contact"></textarea>
-        <input type="button" value="submit" class="submit-contact" />
+        <label class="label-contact" class="label-contact">Your Message</label>
+        <textarea class="input-contact" id="inputMessage"></textarea>
+        <input type="submit" value="submit" class="submit-contact"  />
       </form>
     </div>
+
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>
