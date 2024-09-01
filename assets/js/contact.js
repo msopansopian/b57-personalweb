@@ -27,8 +27,6 @@ function sendEmail(event) {
   a.target = "_blank";
   a.click();
 
-  //   console.log(`Name : ${name}\nEmail : ${email}\nPhone : ${phone}\nSubject : ${subject}\nMessage : ${message}`);
-
   let data = {
     dataName: name,
     dataEmail: email,
@@ -40,4 +38,3 @@ function sendEmail(event) {
   console.log(data);
 }
 
-console.log("hellodddd");
