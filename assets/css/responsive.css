@@ -1,0 +1,169 @@
+/* TAMPILAN LAYAR DEFAULT UNTUK  NAV HUMBERGER*/
+.nav-contact i {
+  display: none;
+  font-size: 24px;
+  padding: 10px;
+  color: rgb(149, 96, 96);
+}
+
+.humberger-nav-container {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.humberger-button {
+  display: none;
+}
+
+.hamburger-button i {
+  font-size: 24px; 
+  padding: 10px; 
+  color: white; 
+}
+
+.humberger-nav-container a {
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+}
+
+
+/*TAMPILAN LAYAR KETIKA UKURAN 576PX KE BAWAH  */
+
+@media only screen and (max-width: 576px) {
+  /* NAVBAR */
+  .navbar .nav-link,
+  .btn-contact {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+
+  .hamburger-button i {
+    font-size: 30px; 
+    color: black;
+  }
+
+  .nav-contact i {
+    display: block;
+    font-size: 30px;
+    background-color: aliceblue;
+  }
+
+  .humberger-nav-container {
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .humberger-nav-container a {
+    margin-top: 10px;
+    border: 2px solid black;
+    background-color: rgb(168, 208, 209);
+    color: black;
+  }
+
+  .humberger-nav-containera:hover {
+    background-color: aqua;
+  }
+
+  /* CARD index.html */
+  .card {
+    background-color: rgb(248, 242, 242);
+    height: 80%;
+    width: 80%;
+    margin: 200px auto;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 2px black;
+    overflow: auto;
+    flex-direction: column;
+  }
+
+  .biodata {
+    margin: 10px;
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+  .icon {
+    justify-content: center;
+  }
+
+  /* CONTACT.HTML  DAN MYPROJCT.HTML*/
+  .form-contact {
+    width: 80vw;
+  }
+
+  .input-contact,
+  .submit-contact {
+    width: 100%;
+  }
+
+  .input-contact {
+    font-size: large;
+  }
+
+  .form-contact,
+  .container-myproject {
+    width: 90%;
+    margin: 0; /* Hilangkan margin untuk mencegah overflow */
+  }
+
+  .input-contact,
+  .submit-contact,
+  .date-item,
+  .tech-item {
+    width: 100%;
+  }
+
+  /* MYPROJECT.HTML */
+  .date-container {
+    flex-direction: column; 
+  }
+
+  .date-item {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .tech-item {
+    width: 100%; 
+  }
+
+  /* MY PROJECT.HTML BAGIAN LIST-PROJECT */
+
+  .project-h1 {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .list-project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    padding: 10px;
+  }
+
+  .card-blog {
+    width: 70%;
+    height: 75%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .card-blog img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 2px;
+  }
+
+  .card-blog p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}

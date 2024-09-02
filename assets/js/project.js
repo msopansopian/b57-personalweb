@@ -49,7 +49,7 @@ function submitData(event) {
     uploadimage: inputImage,
   };
 
-  dataBlog.push(blog);
+  dataBlog.unshift(blog);
   console.log("dataArray:", dataBlog);
 
   showProject();

@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/addproject.css" />
     <link rel="stylesheet" href="assets/css/project.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
+    <!-- ICON -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -34,9 +36,19 @@
       </ul>
 
       <div class="nav-contact">
-        <a href="contact.html" class="btn-contact" target="_blank">Contact Me</a>
+        <button class="hamburger-button" id="humberger-button">
+          <i class="fa-solid fa-bars humberger-button" id="humberger-button" onclick="openHumberger()"></i>
+        </button>
+        <a href="contact.html" class="btn-contact nav-collapse" target="_blank">Contact Me</a>
       </div>
     </nav>
+
+    <!-- NAVBAR RESPONSIV -->
+    <div class="humberger-nav-container" id="humberger-nav-container">
+      <a href="index.html" class="active">Home</a>
+      <a href="myproject.html">My Project</a>
+      <a class="a-contact" href="contact.html">Contact Me</a>
+    </div>
 
     <!-- CONTAINER ADD-PROJECT -->
     <h1 class="title-project">ADD MY PROJECT</h1>
@@ -89,10 +101,11 @@
 
     <!-- LIST PROJECT -->
     <h1 class="project-h1">MY PROJECT</h1>
-    <div id="list-project" class="class-list-project">
-      
+    <div id="list-project" class="list-project">
+      <!-- akan di isi di js -->
     </div>
 
+    <script src="assets/js/navbar.js"></script>
     <script src="assets/js/project.js"></script>
 
   </body>

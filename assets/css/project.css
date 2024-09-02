@@ -3,16 +3,11 @@
   padding-top: 25px;
 }
 
-.class-list-project {
+.list-project {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 16px;
-}
-
-.list-project {
-  padding-top: 25px;
-  display: flex;
 }
 
 .card-blog {
@@ -31,15 +26,10 @@
   height: 50%;
   border-radius: 10px;
   border-radius: 10px;
-  margin-bottom: 5px;
-  
+  margin-bottom: 5px; 
 }
 
-.a-href {
-  text-decoration: none;
-  color: black;
-  margin: 10px 0;
-}
+
 
 .card-blog p {
   padding-top: 20px;

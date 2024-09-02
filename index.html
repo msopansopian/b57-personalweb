@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
     <!-- link untuk menampilkan icon -->
     <link
       rel="stylesheet"
@@ -34,9 +35,19 @@
       </ul>
 
       <div class="nav-contact">
-        <a href="contact.html" class="btn-contact" target="_blank">Contact Me</a>
+        <button class="hamburger-button" id="humberger-button" >
+          <i class="fa-solid fa-bars humberger-button" id="humberger-button" onclick="openHumberger()"></i>
+        </button>
+        <a href="contact.html" class="btn-contact nav-collapse" target="_blank">Contact Me</a>
       </div>
     </nav>
+
+    <!-- NAVBAR RESPONSIV -->
+    <div class="humberger-nav-container" id="humberger-nav-container">
+      <a href="index.html" class="active">Home</a>
+      <a href="myproject.html">My Project</a>
+      <a class="a-contact" href="contact.html">Contact Me</a>
+    </div>
 
     <!-- BAGIAN CARD -->
     <div class="card">
@@ -63,5 +74,7 @@
         <h5>FULLSTACK DEVELOPER</h5>
       </div>
     </div>
+
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>

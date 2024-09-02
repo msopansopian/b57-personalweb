@@ -58,3 +58,7 @@
 
   white-space: nowrap;
 }
+
+.hamburger-button{
+  display: none;
+}
