@@ -5,7 +5,9 @@ body {
   background: linear-gradient(90deg, rgba(9, 121, 105, 0.9809173669467787) 0%, rgba(0, 212, 255, 0.6307773109243697) 100%);
 }
 
-
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
 
 
 /* styling card */

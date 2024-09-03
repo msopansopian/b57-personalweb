@@ -17,9 +17,9 @@
 }
 
 .hamburger-button i {
-  font-size: 24px; 
-  padding: 10px; 
-  color: white; 
+  font-size: 24px;
+  padding: 10px;
+  color: white;
 }
 
 .humberger-nav-container a {
@@ -28,7 +28,6 @@
   padding: 5px;
   text-decoration: none;
 }
-
 
 /*TAMPILAN LAYAR KETIKA UKURAN 576PX KE BAWAH  */
 
@@ -44,7 +43,7 @@
   }
 
   .hamburger-button i {
-    font-size: 30px; 
+    font-size: 30px;
     color: black;
   }
 
@@ -111,7 +110,7 @@
   .form-contact,
   .container-myproject {
     width: 90%;
-    margin: 0; /* Hilangkan margin untuk mencegah overflow */
+    margin: 0; /* Hilangin margin biar tidak overflow */
   }
 
   .input-contact,
@@ -123,16 +122,16 @@
 
   /* MYPROJECT.HTML */
   .date-container {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .date-item {
-    width: 100%; 
-    margin-bottom: 10px; 
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .tech-item {
-    width: 100%; 
+    width: 100%;
   }
 
   /* MY PROJECT.HTML BAGIAN LIST-PROJECT */
@@ -165,5 +164,22 @@
   .card-blog p {
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  /* TESTIMONIAL.HTML */
+  .rating {
+    display: flex;
+    justify-content: center; /* Mengatur tombol agar tetap terpusat */
+    gap: 4px; /* Mengurangi jarak antar tombol agar lebih rapat */
+    width: 100%; /* Memastikan container menyesuaikan lebar layar */
+    background-color: brown;
+    margin-right: 0; /* Menghilangkan margin kanan yang tidak diperlukan */
+  }
+
+  .rating-btn {
+    flex: 1; /* Membuat tombol memiliki lebar yang sama dan menyesuaikan ruang yang tersedia */
+    padding: 10px; /* Mengurangi padding untuk menyesuaikan tombol di satu baris */
+    text-align: center; /* Mengatur teks dalam tombol tetap terpusat */
+    max-width: 50px; /* Membatasi lebar maksimum tombol agar tidak terlalu lebar */
   }
 }

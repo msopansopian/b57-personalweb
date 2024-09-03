@@ -30,4 +30,3 @@ function checkScreenSize() {
 // Tambahkan event listener untuk memantau perubahan ukuran layar
 window.addEventListener("resize", checkScreenSize);
 
-console.log("hello");
