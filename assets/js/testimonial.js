@@ -16,7 +16,7 @@ class Testimonial {
           <img src="${this.image}" class="profile-testimonial" />
           <p class="quote">"${this.content}"</p>
           <p class="author">- ${this.author}</p>
-          <p class="author">${this.rating}</p>
+          <p class="author">${this.rating}<i class="fa-solid fa-star"></i></p>
       </div>`;
     }
   }
@@ -41,8 +41,20 @@ class Testimonial {
     "mail",
     3
   );
+  const testimonial4 = new Testimonial(
+    "assets/img/mail.jpeg",
+    "2 ringgit 2 ringgit 2 ringgit",
+    "mail",
+    3
+  );
+  const testimonial5 = new Testimonial(
+    "assets/img/mail.jpeg",
+    "2 ringgit 2 ringgit 2 ringgit",
+    "mail",
+    3
+  );
   
-  const testimonials = [testimonial1, testimonial2, testimonial3]
+  const testimonials = [testimonial1, testimonial2 ,testimonial3,testimonial4,testimonial5]
   
   let testimonialHTML = ``
   

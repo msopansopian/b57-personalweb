@@ -3,8 +3,8 @@ body {
   background: linear-gradient(90deg, rgba(9, 121, 105, 0.9809173669467787) 0%, rgba(0, 212, 255, 0.6307773109243697) 100%);
 }
 
-*{
-  font-family: 'Times New Roman', Times, serif;
+* {
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* RATING BINTANG DAN JUDUL */
@@ -17,7 +17,7 @@ h1 {
 }
 
 .container-rating h2 {
-    color: white;
+  color: white;
   text-align: center;
 }
 
@@ -39,24 +39,21 @@ h1 {
 /* CARD TESTIMONIAL */
 
 .testimonials {
-  width: 80%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
 }
-
-
 
 .testimonial {
   background-color: white;
-  width: 80%;
-  height: 38%;
-  overflow: auto;
-  border: 1px solid black;
-  margin: 20px;
+  width: 25%;
+  height: 300px;
+  margin: 0 15px 30px 15px;
   padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgb(41, 41, 44);
 }
 
@@ -76,8 +73,7 @@ h1 {
   font-size: 16px;
 }
 
-.testimonial .author{
-    text-align: end;
-    font-weight: bold;
+.testimonial .author {
+  text-align: end;
+  font-weight: bold;
 }
-
