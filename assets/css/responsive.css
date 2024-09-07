@@ -169,17 +169,19 @@
   /* TESTIMONIAL.HTML */
   .rating {
     display: flex;
-    justify-content: center; /* Mengatur tombol agar tetap terpusat */
-    gap: 4px; /* Mengurangi jarak antar tombol agar lebih rapat */
-    width: 100%; /* Memastikan container menyesuaikan lebar layar */
-    background-color: brown;
-    margin-right: 0; /* Menghilangkan margin kanan yang tidak diperlukan */
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
   }
 
   .rating-btn {
-    flex: 1; /* Membuat tombol memiliki lebar yang sama dan menyesuaikan ruang yang tersedia */
-    padding: 10px; /* Mengurangi padding untuk menyesuaikan tombol di satu baris */
-    text-align: center; /* Mengatur teks dalam tombol tetap terpusat */
-    max-width: 50px; /* Membatasi lebar maksimum tombol agar tidak terlalu lebar */
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    max-width: 50px;
   }
+
+  
 }
