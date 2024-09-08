@@ -33,11 +33,11 @@ const testimonial = new Promise((resolve, reject) => {
       // Looping melalui setiap item dalam response untuk membuat elemen HTML
       response.forEach((item) => {
         testimonialHtml += `
-        <div class="testimonial">
-          <img src="${item.image}" alt="testimonial" class="profile-testimonial">
-              <p class="quote">${item.content}</p>
-              <p class="author">- ${item.author}</p>
-              <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
+        <div class="testimonial bg-white w-25 h-250 mx-3 mb-3 p-2 border border-dark rounded-3">
+          <img src="${item.image}" alt="testimonial" class="profile-testimonial w-100">
+              <p class="quote text-center mt-2 mb-4">${item.content}</p>
+              <p class="author text-end fw-bold">- ${item.author}</p>
+              <p class="author text-end fw-bold">${item.rating} <i class="fa-solid fa-star"></i></p>
         </div>`;
       });
   
@@ -62,12 +62,12 @@ const testimonial = new Promise((resolve, reject) => {
       } else {
         // Looping melalui setiap item dalam data yang difilter untuk membuat elemen HTML
         dataFilter.forEach((item) => {
-          testimonialHtml += `<div class="testimonial">
-          <img src="${item.image}" alt="testimonial" class="profile-testimonial">
-          <p class="quote">${item.content}</p>
-          <p class="author">- ${item.author}</p>
-          <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
-          </div>`;
+          testimonialHtml += `<div class="testimonial bg-white w-25 h-250 mx-3 mb-3 p-2 border border-dark rounded-3">
+          <img src="${item.image}" alt="testimonial" class="profile-testimonial w-100">
+              <p class="quote text-center mt-2 mb-4">${item.content}</p>
+              <p class="author text-end fw-bold">- ${item.author}</p>
+              <p class="author text-end fw-bold">${item.rating} <i class="fa-solid fa-star"></i></p>
+        </div>`;
         });
       }
   

@@ -1,42 +1,5 @@
-body {
-  background: rgb(9, 121, 105);
-  background: linear-gradient(90deg, rgba(9, 121, 105, 0.9809173669467787) 0%, rgba(0, 212, 255, 0.6307773109243697) 100%);
-}
-
-*{
-  font-family: 'Times New Roman', Times, serif;
-}
-
-h1 {
-  text-align: center;
-  padding-top: 25px;
-  color: white;
-}
-
-.container {
-  padding-top: 25px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  min-height: 70vh; 
-}
-
-.form-contact {
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  height: 80%;
-}
-
-.label-contact,
-.input-contact {
-  margin-bottom: 10px;
-}
-
-.label-contact {
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
+* {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .input-contact {
@@ -54,10 +17,6 @@ textarea.input-contact {
 }
 
 .submit-contact {
-  background-color: black;
-  color: white;
-  padding: 10px;
   width: 100px;
-  border-radius: 10px;
   align-self: flex-end;
 }

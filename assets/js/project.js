@@ -94,23 +94,21 @@ function showProject() {
 
     // setelah input di isi,maka datanya dimasukan ke list project 
     document.getElementById("list-project").innerHTML += `
-        <div class="card-blog" id="project-${index}">
-              <img src="${dataBlog[index].uploadimage}" alt="">
-
-
+      <div class="col-md-4">
+        <div class="card-project bg-white overflow-auto border p-4 mx-3" id="project-${index}">
+              <img class="img-fluid w-100  rounded mb-1" src="${dataBlog[index].uploadimage}" alt="">
               <h3  onclick="openDetail('${dataBlog[index].name}','${dataBlog[index].uploadimage}','${dataBlog[index].startdate}','${dataBlog[index].enddate}','${durasi}','${dataBlog[index].deskripsi}','${dataBlog[index].teknologi}')">${dataBlog[index].name}</h3>
           
               <h4>${durasi}</h4>
-              <p>${dataBlog[index].deskripsi}</p>
+              <p class="py-4 mb-1 text-break">${dataBlog[index].deskripsi}</p>
               <div class="logo-checkbox" id="list-checkbox" >
               ${datacheckbox}  
               </div>
-              <button class="button-edit">EDIT</button>
-              <button class="button-delete" onclick="deleteProject(${index})">DELETE</button>
+              <button class="btn btn-primary button-edit">EDIT</button>
+              <button class="btn btn-danger button-delete" onclick="deleteProject(${index})">DELETE</button>
               
             </div>
-
-            
+      </div>                  
     `;
   }
 }
@@ -123,7 +121,7 @@ function deleteProject(index) {
 }
 
 
-// fungsi untuk membuka detail dari list project
+// fungsi untuk membuka detail dari list project menggunakan local storage
 function openDetail(title, imageUrl, startDate, endDate, duration, description, teknologi) {
   
   cardData = {

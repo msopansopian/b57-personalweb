@@ -1,3 +1,4 @@
+// MENJALANKAN FUNGSI KIRIM EMAIL
 function sendEmail(event) {
   event.preventDefault();
   // menangkap id di contact.html

@@ -1,32 +1,13 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: rgb(9, 121, 105);
-  background: linear-gradient(90deg, rgba(9, 121, 105, 0.9809173669467787) 0%, rgba(0, 212, 255, 0.6307773109243697) 100%);
-  font-family: "Times New Roman", Times, serif;
-}
-
 .container {
-  background-color: white;
-  margin: 50px auto;
   height: 60%;
   width: 70%;
-  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   border: 2px solid black;
   box-shadow: 5px 5px 5px 5px rgb(41, 41, 44);
 }
 
-.blog-detail h1 {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.author {
-  display: flex;
-}
-
 img {
-  width: 50%;
   height: 180px;
   object-fit: contain;
   border-radius: 10px;
@@ -34,23 +15,10 @@ img {
 
 .duration h4,
 .duration h5 {
-  width: 100%;
   margin-left: 10px;
 }
 
-.duration h5 {
-  margin-top: 10px;
-}
-
-.tech {
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
-}
-
 .tech h4 {
-  width: 100%;
   margin: 10px;
 }
 

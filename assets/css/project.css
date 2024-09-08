@@ -1,10 +1,5 @@
-*{
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.project-h1 {
-  text-align: center;
-  padding-top: 25px;
+* {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .list-project {
@@ -14,33 +9,25 @@
   padding: 16px;
 }
 
-.card-blog {
-  background-color: white;
+.card-project {
   width: 300px;
-  height: 400px;
-  overflow: auto;
-  border: 1px solid black;
-  margin: 20px;
-  padding: 20px;
+  height: 450px;
   box-shadow: 5px 5px 5px 5px rgb(41, 41, 44);
 }
 
-.card-blog img {
-  width: 100%;
+.card-project img {
+  
   height: 50%;
-  border-radius: 10px;
-  margin-bottom: 5px; 
+  
 }
 
-
-
-.card-blog p {
+/* .card-project p {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 5px;
-  word-wrap: break-word; 
+  word-wrap: break-word;
   word-break: break-word;
-}
+} */
 
 .button-edit,
 .button-delete {
