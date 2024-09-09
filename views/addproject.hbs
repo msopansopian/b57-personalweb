@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,7 +23,7 @@
     <!-- NAVBAR BOOTSTRAP -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="position: fixed; top: 0; width: 100%; ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/">
           <img src="assets/img/dumbways.png" style="height: 50px" class="rounded-circle" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,16 +32,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="myproject.html">add Project</a>
+              <a class="nav-link text-white" href="/addproject">Add Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="testimonial.html">Testimonial</a>
+              <a class="nav-link text-white" href="/testimonial">Testimonial</a>
             </li>
           </ul>
-          <a href="contact.html"><button class="btn btn-danger btn-lg" type="submit">Contact Me</button></a>
+          <a href="/contact"><button class="btn btn-danger btn-lg" type="submit">Contact Me</button></a>
         </div>
       </div>
     </nav>
@@ -51,56 +50,57 @@
     <h1 class="title-project text-center pt-4 text-white mt-5">ADD MY PROJECT</h1>
 
     <div class="container-myproject d-flex justify-content-center pt-4">
-      <form onsubmit="submitData(event)" class="form-contact d-flex flex-column">
+      <form method="post" action="/addproject" class="form-contact d-flex flex-column">
         <label for="project-name" class="label-contact w-100 text-white fw-bold mb-1">Project Name</label>
-        <input type="text" id="project-name" class="input-contact p-1 rounded mb-1" />
+        <input type="text" id="projectname" class="input-contact p-1 rounded mb-1" name="projectname" />
 
         <div class="date-container d-flex justify-content-between w-100">
           <div class="date-item">
             <label for="start-date" class="label-contact w-100 text-white fw-bold mb-1">Start Date</label>
-            <input type="date" id="start-date" class="input-contact p-1 rounded mb-1" />
+            <input type="date" id="start-date" class="input-contact p-1 rounded mb-1" name="startdate" />
           </div>
           <div class="date-item">
             <label for="end-date" class="label-contact w-100 text-white fw-bold mb-1">End Date</label>
-            <input type="date" id="end-date" class="input-contact p-1 rounded mb-1" />
+            <input type="date" id="end-date" class="input-contact p-1 rounded mb-1" name="enddate"/>
           </div>
         </div>
 
         <label for="description" class="label-contact w-100 text-white fw-bold mb-1">Deskripsi</label>
-        <textarea id="description" class="input-contact p-1 rounded mb-1"></textarea>
+        <textarea id="description" class="input-contact p-1 rounded mb-1" name="description"></textarea>
 
         <div class="tech-container d-flex justify-content-between w-100 flex-wrap mb-3">
           <h2 for="technologi" class="label-contact w-100 text-white fw-bold mb-1">Tekhnologi</h2>
           <div class="tech-item d-flex w-48 align-items-center text-white">
-            <input type="checkbox" id="nodejs" />
+            <input type="checkbox" id="nodejs" name="nodejs"/>
             <label for="nodejs">Node JS</label>
           </div>
           <div class="tech-item d-flex w-48 align-items-center text-white">
-            <input type="checkbox" id="reactjs" />
+            <input type="checkbox" id="reactjs" name="reactjs" />
             <label for="reactjs">React JS</label>
           </div>
           <div class="tech-item d-flex w-48 align-items-center text-white">
-            <input type="checkbox" id="typescript" />
+            <input type="checkbox" id="typescript" name="typescript" />
             <label for="typescript">Type Script</label>
           </div>
           <div class="tech-item d-flex w-48 align-items-center text-white">
-            <input type="checkbox" id="angular" />
+            <input type="checkbox" id="angular" name="angular" />
             <label for="angular">Angular</label>
           </div>
         </div>
 
+        {{!-- UPLOAD FILE IMG --}}
         <label for="upload-image" class="label-contact w-100 text-white fw-bold mb-1">Upload Image</label>
         <input type="file" id="upload-image" class="input-contact p-1 rounded mb-1" />
-
-        <input type="submit" value="Submit" class="submit-contact" />
+        {{!-- BUTTON --}}
+        <input type="submit" value="Submit" class="btn btn-danger submit-contact ml-1 mt-3" />
       </form>
     </div>
 
     <!-- LIST PROJECT -->
-    <h1 class="project-h1 text-center text-white">MY PROJECT</h1>
+    {{!-- <h1 class="project-h1 text-center text-white">MY PROJECT</h1>
     <div id="list-project" class="row g-4 p-3">
       <!-- di isi js -->
-    </div>
+    </div> --}}
 
     <!-- tutup -->
 
